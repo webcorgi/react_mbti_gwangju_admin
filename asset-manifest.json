@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/react_mbti_gwangju_admin/static/css/main.b4242ba6.css",
+    "main.js": "/react_mbti_gwangju_admin/static/js/main.a2e12766.js",
+    "static/js/787.a30e5475.chunk.js": "/react_mbti_gwangju_admin/static/js/787.a30e5475.chunk.js",
+    "static/media/GmarketSansTTFBold.ttf": "/react_mbti_gwangju_admin/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
+    "static/media/GmarketSansTTFMedium.ttf": "/react_mbti_gwangju_admin/static/media/GmarketSansTTFMedium.d4bac6b182bed73c9375.ttf",
+    "static/media/GmarketSansTTFLight.ttf": "/react_mbti_gwangju_admin/static/media/GmarketSansTTFLight.efaa8f19ead1555b1c39.ttf",
+    "static/media/GmarketSansTTFBold.woff": "/react_mbti_gwangju_admin/static/media/GmarketSansTTFBold.92299230fa7026b752cb.woff",
+    "static/media/GmarketSansTTFMedium.woff": "/react_mbti_gwangju_admin/static/media/GmarketSansTTFMedium.c441bbe11105e62d9be7.woff",
+    "static/media/GmarketSansTTFLight.woff": "/react_mbti_gwangju_admin/static/media/GmarketSansTTFLight.f3787517e506710aeb16.woff",
+    "static/media/sample2.png": "/react_mbti_gwangju_admin/static/media/sample2.4b1b0e4bee1fcef00381.png",
+    "static/media/sample1.png": "/react_mbti_gwangju_admin/static/media/sample1.89d3de50ab08d82dcfee.png",
+    "static/media/ico_3d_global.png": "/react_mbti_gwangju_admin/static/media/ico_3d_global.f378dc81db63a83509c1.png",
+    "static/media/ico_3d_goal.png": "/react_mbti_gwangju_admin/static/media/ico_3d_goal.06b260f42986e1e00b3f.png",
+    "static/media/btm_bg.png": "/react_mbti_gwangju_admin/static/media/btm_bg.23b9fb05b11066038aa8.png",
+    "static/media/ico_3d_chart.png": "/react_mbti_gwangju_admin/static/media/ico_3d_chart.2bbe8d9366ff3303304f.png",
+    "static/media/chart.png": "/react_mbti_gwangju_admin/static/media/chart.b63c4bdcde5b3d61fa4b.png",
+    "static/media/mid_bg.png": "/react_mbti_gwangju_admin/static/media/mid_bg.8a98b1d8fd2081ce2a1e.png",
+    "static/media/head_logo.png": "/react_mbti_gwangju_admin/static/media/head_logo.e8ad29f3e5854363eece.png",
+    "static/media/ico_3d_backpack.png": "/react_mbti_gwangju_admin/static/media/ico_3d_backpack.fd6e9e0374ca91b04522.png",
+    "static/media/ico_3d_types.png": "/react_mbti_gwangju_admin/static/media/ico_3d_types.9cc381d0c77140a4c2de.png",
+    "index.html": "/react_mbti_gwangju_admin/index.html",
+    "main.b4242ba6.css.map": "/react_mbti_gwangju_admin/static/css/main.b4242ba6.css.map",
+    "main.a2e12766.js.map": "/react_mbti_gwangju_admin/static/js/main.a2e12766.js.map",
+    "787.a30e5475.chunk.js.map": "/react_mbti_gwangju_admin/static/js/787.a30e5475.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4242ba6.css",
+    "static/js/main.a2e12766.js"
+  ]
+}
