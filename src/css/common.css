@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "GmarketSans";
+    font-weight:300;
+    src: url(font/GmarketSansTTFLight.woff) format("woff"),
+         url(font/GmarketSansTTFLight.ttf) format('truetype');
+}
+@font-face {
+    font-family: "GmarketSans";
+    font-weight: 500;
+    src: url(font/GmarketSansTTFMedium.woff) format("woff"),
+         url(font/GmarketSansTTFMedium.ttf) format("truetype");
+}
+@font-face {
+    font-family: "GmarketSans";
+    font-weight: 700;
+    src: url(font/GmarketSansTTFBold.woff) format("woff"),
+         url(font/GmarketSansTTFBold.ttf) format("truetype");
+}
+body * {
+    font-family: "GmarketSans", sans-serif;
+    font-size: 17px;
+    color:#333;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+:root {
+    --default-color1:#7EE76E;
+    --default-color2:#59B74B;
+    --default-color3:#3388BD;
+    --default-color4:#43C2D8;
+    --default-color5:#ECB547;
+    --sub-color1:#C8FCFF;
+    --sub-color2:#F9FFF8;
+    --sub-color3:#9AABD8;
+    --sub-color4:#88C7D8;
+    --sub-color5:#F1EFC3;
+    --shadow:0 0 40px rgba(0,0,0,0.05);
+}
+select {
+    -webkit-appearance:none; /* 크롬 화살표 없애기 */
+    -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+    appearance:none /* 화살표 없애기 */
+}
+
+.btn {
+    position: relative;
+    background: var(--default-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0 10px 0 10px;
+    width: 100%;
+    max-width: 100%;
+    height: 85px;
+    transition-duration:.2s;
+    margin:0 auto;
+}
+*[class^="btn_"]:hover,
+.btn:hover {
+    opacity: .85;
+    transition-duration:.2s;
+}
+.btn span {
+    color:#fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 2px;
+}
+.btn.mini span {
+    font-size: 17px;
+}
+.btn:before {
+    content:'';
+    width: 1px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    top: -3px;
+    left: 10px;
+    transform: rotate(135deg);
+}
+
+.btn:after {
+    content:'';
+    width: 1px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    bottom: -5px;
+    right: 8px;
+    transform: rotate(135deg);
+}
+.btn.mini {
+    max-width: 340px;
+    height: 50px;
+}
+
+.tit {}
+.tit h1 {
+    font-size: 34px;
+    font-weight: bold;
+}
+.tit h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.tit h2 span {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 50px;
+}
+.tit h2 span.underline {
+    z-index: 1;
+    margin-right: 10px;
+}
+.tit h2 span.underline:before {
+    content:'';
+    display: inline-block;
+    height: 15px;
+    width: 100%;
+    background: var(--default-color2);
+    position: absolute;
+    bottom:10px;
+    left:0;
+    z-index: -1;
+}
+.tit p.subtext {
+    font-size: 20px;
+}
+.tit p.hashtag {
+    font-size: 20px;
+    font-weight: 300;
+}
+footer {
+    position: relative;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding: 40px 0;
+    background: #fff;
+    z-index: 1;
+}
+footer .logo__link {
+    position: absolute;
+    left:0;
+    top:-10px;
+}
+footer .logo__link img {
+    height: 39px;
+}
+footer p {
+    font-size:14px;
+}
+
+.btmBg {
+    height: 361px;
+    background: url(../img/btm_bg.png) bottom /contain no-repeat;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.h80 {
+    height:80px !important;
+}
+
+
+.selectFlag {
+    position: relative;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.selectFlag button {
+    background: none;
+    display: none;
+}
+
+.selectFlag button.selected {
+    display: block;
+}
+.selectFlag .viewAll button {
+    display: block !important;
+}
+
+.selectFlag.type2 {
+    justify-content: center;
+}
+.selectFlag.type2 {
+    padding-top: 20px;
+}
+.selectFlag.type2 .viewAll {
+    position: relative;
+    top:-10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selectFlag.type2 .viewAll button {
+    border-bottom:20px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow:var(--shadow);
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+}
+.btn_nav {
+    display: none;
+}
+.selectFlag.type2.active{
+    justify-content: flex-end;
+}
+.selectFlag.type2.active button {
+    margin-right: 15px;
+}
+.selectFlag.type2.active button:not(:last-child){
+    border:2px solid var(--default-color1)
+}
+
+.selectFlag.type1 {
+    top: 10px;
+    position: relative;
+}
+.selectFlag.type1.active {
+
+}
+.selectFlag.type1 button {
+    background: #fff;
+    padding:10px 20px;
+    width:100%;
+}

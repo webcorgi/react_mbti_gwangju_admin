@@ -1,0 +1,558 @@
+@charset "utf-8";
+
+@media screen and (max-width:1200px){
+    .content__box2 a p span,
+    .content__box2 a p b {
+        font-size:14px;
+    }
+    
+    .subHeader .btn-back {
+        left: 20px;
+    }
+    .subHeader .btn-back img {
+        width:35px;
+    }
+    .subHeader .text {
+        padding-left: 60px;
+    }
+    .nav_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: fixed;
+        top:0;
+        right:0;
+        height:100vh;
+    }
+    .btn_nav{
+        display: block;
+        width:50px;
+        height:140px;
+        background: #fff;
+        border:1px solid #333;
+        border-right: 0;
+        z-index: 100;
+        font-size:25px;
+        border-radius: 10px 0 0 10px;
+        position: relative;
+        right:-2px;
+        top:20%;
+    }
+    .btn_nav:hover {
+        opacity: 1;
+    }
+    
+    nav {
+        top:0;
+        right:0;
+        z-index: 10;
+        background: #fff;
+        height:100vh;
+        padding: 20px;
+        width:;
+        margin-left: 0;
+        border-left:1px solid #333;
+        padding: 10px;
+        width:140px;
+    }
+    nav> * {
+        border:0;
+    }
+    .visual__info {
+        padding:110px 40px;
+    }
+    .tit h1 {
+        font-size:20px;
+    }
+    .tit h2 span {
+        font-size:34px;
+    }
+    .main__content .content__box {
+        display: block;
+    }
+    .main__content .content__box>div {
+        margin:0 auto;
+        width:100%;
+    }
+    .mid_bg {
+        display: none;
+    }
+    .main__content {
+        top:0;
+        margin-top: 100px;
+    }
+    .box__most {
+        margin-bottom: 50px !important;
+    }
+    .result .tit__big {
+        font-size:70px;
+    }
+    .result .tit__big {
+        top:15px;
+    }
+    .contents.sub {
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    body * {
+        font-size:14px;
+    }
+    .content__box2 {
+        display: block;
+    }
+    .visual {
+        display: block;
+        width:90%;
+        height:auto;
+        margin:30px auto;
+    }
+    .visual>div {
+        width: 100%;
+    }
+    .plane-container {
+        display: none;
+    }
+    .visual__info {
+        padding: 40px 15px;
+    }
+    .tit h2 span {
+        font-size:27px;
+    }
+    .tit h2 span.underline:before {
+        height:5px;
+    }
+    .tit p.subtext {
+        font-size:17px;
+        word-break:keep-all
+    }
+    .tit p.hashtag {
+        font-size:17px;
+    }
+    .btn .ico_3d_modeling {
+        display: none;
+    }
+
+    .btn {
+        width: 90%;
+        height: 60px;
+    }
+    .btn span {
+        font-size:17px;
+    }
+    .main__content .content__box h3 * {
+        font-size:17px;
+    }
+    .main__content {
+        margin-top: 50px;
+    }
+    .main__content .content__box h3 {
+        margin-bottom: 15px;
+    }
+    .wrapper__most .most__img {
+        height:100px;
+    }
+    .wrapper__most .most__text {
+        padding:10px;
+        height:auto;
+    }
+    .wrapper__most .most__text strong {
+        font-size:17px;
+    }
+    .wrapper__most .most__text .mark {
+        font-size:14px;
+        min-width:40px;
+    }
+    .chart__box {
+        height:auto;
+        display: block;
+    }
+    #chart {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .chart__box {
+        padding: 20px 10px;
+    }
+    .chart__list {
+        padding-left: 0;
+    }
+    .visual__info .btn {
+        margin-top: 20px;
+    }
+    .chart__list li:nth-child(1) .percent{
+        font-size:20px;
+    }
+    .chart__list li:nth-child(2) .percent {
+        font-size:20px;
+    }
+    .content__box2 {
+        margin:50px 0
+    }
+    .content__box2>* {
+        width:100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    .btmBg {
+        display: none;
+    }
+    .header_test .ico_3d_modeling {
+        position: absolute;
+        right:10px;
+        top: 0;
+        height:50px;
+    }
+    .header_test {
+        padding:25px 0;
+    }
+    .survey__list {
+        margin:30px 0;
+    }
+    .survey__list .num {
+        min-width:25px;
+        height:25px;
+        font-size:15px;
+        top: 0;
+        margin-right: 5px;
+    }
+    .survey__list .qa .q {
+        margin-bottom: 10px;;
+    }
+    .survey__list label {
+        align-items: flex-start;
+    }
+    .survey__list label .fakeRadio {
+        min-width:20px;
+    }
+    footer .logo__link {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .ani-circles{
+        display: none;
+    }
+    nav {
+        width:auto;
+        margin-left: 0;
+        top:auto;
+        bottom:5px;
+    }
+    nav>* {
+        width:70px;
+        height:70px;
+        font-size:9px;
+        margin-bottom: 30px;
+    }
+    nav img {
+        width:30px;
+        height:30px;
+    }
+    nav>*:hover {
+        box-shadow:none;
+        border:0;
+    }
+    .selectFlag.type2{
+        padding-top: 8px;
+    }
+    .selectFlag.type2 .viewAll button {
+        width:70px;
+        height:70px;
+        margin-right: 0;
+    }
+    .result .tit__big {
+        font-size:30px;
+        top: 0;
+    }
+    .result__inner {
+        padding:30px 10px;
+    }
+    .result__inner .tit-top {
+        font-size:17px;
+    }
+    .result__inner .tit-top {
+        padding-bottom: 0;
+    }
+    .result__inner .tit-resulttype {
+        font-size:27px;
+        padding:20px 0;
+    }
+    .result__inner .hashtagbox {
+        gap: 5px;
+    }
+    .result__inner h3.tit-mark {
+        font-size:20px;
+    }
+    .result__inner .tit-circle {
+        font-size:27px;
+        margin-bottom: 15px;
+    }
+    .result__inner .tit-circle:before {
+        width:35px;
+        height:35px;
+        top:-10px;
+    }
+    .result__inner .course-name {
+        font-size:20px;
+    }
+    .course__items {
+        margin-bottom: 35px;
+    }
+    .course__items .item .tit-place {
+        font-size:14px;
+    }
+    .course__items .item h6 {
+        font-size:17px;
+    }
+    .wrapper__share {
+        width:95%;
+    }
+    .wrapper__share h6 {
+        font-size:17px;
+    }
+    .wrapper__share .share button {
+        width:40px;
+        height:40px;
+    }
+    .wrapper__share .share button img {
+        max-width:20px;
+        max-height:20px;
+    }
+    .subHeader .text h1 {
+        font-size:20px;
+    }
+    .subHeader .text img {
+        width:30px;
+    }
+    .subHeader {
+        height:140px;
+    }
+
+    .ani-circles2 span:nth-child(1) {
+        width:50px;
+        height:50px;
+        left:105px;
+        top:auto;
+        bottom:-20px;
+    }
+    .ani-circles2 span:nth-child(2) {
+        width:50px;
+        height:50px;
+        left:auto;
+        top:-10px;
+        right: -10px;
+    }
+    .ani-circles2 span:nth-child(3) {
+        width:100px;
+        height:100px;
+        left:auto;
+        top:auto;
+        bottom:-50px;
+        right:-20px;
+    }
+    .ani-circles2 span:nth-child(4),
+    .ani-circles2 span:nth-child(5) {
+        display: none;
+    }
+    .contents__intro {
+        display: block;
+    }
+    .contents__intro .img {
+        width:100%;
+        height:200px;
+    }
+    .contents__intro .text {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .types__items .item {
+        width:calc(50% - 8px);
+    }
+    .types__items .item h2 {
+        font-size:17px;
+        margin:8px 0 5px;
+    }
+    .types__items .item .img {
+        height: 100px;
+    }
+    .contents.sub{
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+    .contents{
+        display: block;
+    }
+    .leftNav {
+        max-width:none;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .leftNav a {
+        width:50%;
+        padding:10px 5px;
+        border-bottom:1px solid #ddd;
+        background-image: none !important;
+    }
+    .leftNav a:nth-child(odd){
+        border-right:1px solid #ddd;
+    }
+    .contents__trip {
+        min-width:100%;
+    }
+
+    .contents__trip h2 {
+        font-size:20px;
+    }
+    .contents__trip .searchbox select{
+        min-width:70px;
+    }
+    select {
+        background-size:10px;
+    }
+    .contents__trip .list__top .selects {
+        display: block;
+        margin:30px 0 20px;
+    }
+    .contents__trip .list__top .selects select {
+        width:31%;
+    }
+    .contents__trip .list__top {
+        display: block;
+    }
+    .contents__trip .item .img {
+        min-width:100%;
+    }
+    .contents__trip .item {
+        display: block;
+    }
+    .contents__trip .item .text {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .contents__trip .item .text h3{
+        font-size:20px;
+    }
+    .contents__trip .item .text p {
+        height:55px;
+    }
+    .paging {
+        justify-content: flex-start;
+    }
+    .paging button {
+        width:20px;
+        height:40px;
+        line-height: 40px;
+        margin:0 3px;
+    }
+    .detailImages {
+        display: block;
+    }
+    .swiper {
+        height:200px;
+        margin-bottom: 10px;
+    }
+    .detailTitle {
+        font-size:20px;
+        height:55px;
+    }
+    .detailHashtag {
+    }
+    .detailHashtag span {
+        margin-bottom: 10px;
+        height:auto;
+    }
+
+
+    .visual .tit h3 span {
+        font-size:35px;
+    }
+    .visual .tit h3 span:before {
+        bottom:0;
+        height:15px;
+    }
+    .chartbox1 {
+        flex-wrap:wrap;
+    }
+    .chartbox1 .box{
+        width:45%;
+    }
+    .chartbox1 .box b {
+        font-size:14px;
+    }
+    .chartbox1 .box p {
+        font-size:17px;
+    }
+    .formbox h3{
+        font-size:17px;
+    }
+    .formtable table th, .formtable table td {
+        padding:5px;
+    }
+    .typesChart .box {
+        width:calc(50% - 20px);
+        padding: 10px;
+    }
+    .typesChart .box h4,
+    .typesChart .box h3 {
+        font-size:14px;
+    }
+    .formbox h2{
+        font-size:24px;
+        margin-bottom: 20px;
+    }
+    .formbox .addimg label {
+        max-width:100%;
+        width:100%;
+    }
+    .formbox .addtag {
+        flex-wrap:wrap;
+    }
+    .formbox .addtag label {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .formbox .addtag label input {
+        width:100%;
+        margin-right: 0;
+    }
+    .formbox .btn {
+        width:100%;
+    }
+    .formbox .addimg .img {
+        width: 100%;
+    }
+    .qnalist li .a>div {
+        display: block;
+    }
+    .qnalist li .a>div select {
+        width:100%;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .qnalist li .q span, .qnalist li .a span {
+        min-width:50px;
+    }
+
+    .formbox .addimg_outer {
+        display: block;
+    }
+    .formbox .addimg{
+        margin-bottom: 40px;
+    }
+    .charSelect {
+        padding: 20px 10px;
+        align-items: stretch;
+    }
+    .charSelect button {
+        width:48%;
+        font-size:12px;
+        word-break: keep-all;
+        padding:5px;
+    }
+}
