@@ -11,7 +11,6 @@ import {
 } from 'react-router-dom';
 import ScrollTop from 'include/ScrollTop';
 import Footer from 'include/Footer';
-import Test from 'pages/Test';
 import Result from 'pages/Result';
 import Intro from 'pages/Intro';
 import Types from 'pages/Types';
@@ -32,10 +31,10 @@ function App() {
       <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} exact />
-        <Route path="/test" element={<Test />} />
+        {/* <Route path="/test" element={<Test />} /> */}
         <Route path="/test/admin" element={<TestAdmin />} />
         <Route path="/result" element={<Result />} />
-        <Route path="/intro" element={<Intro />} />
+        {/* <Route path="/intro" element={<Intro />} /> */}
         <Route path="/types" element={<Types />} />
         <Route path="/types/admin" element={<TypesAdmin />} />
         <Route path="/trip" element={<Trip />} />

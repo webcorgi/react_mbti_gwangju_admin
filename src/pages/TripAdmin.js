@@ -5,6 +5,7 @@ import {Link, useNavigate} from 'react-router-dom';
 import icoSearch from 'img/ico_search.png'
 import sample from 'img/sample1.png'
 import Nav from 'include/Nav';
+import SubHeader from 'include/SubHeader';
 
 const charData = [
     {
@@ -86,24 +87,7 @@ function TripAdmin() {
     )
     return (
         <div className="TripAdmin">
-            <header className='subHeader'>
-                <div className="wrapper">
-                    <Link onClick={() => navigate(-1)} className='btn-back'>
-                        <img src={btnBack} alt="back"/>
-                    </Link>
-                    <div className='text'>
-                        <img src={logo} alt="logo"/>
-                        <h1>여행지 관리</h1>
-                    </div>
-                </div>
-                <div className="ani-circles2">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </header>
+            <SubHeader title={'여행지 관리'} />
 
             <div className="contents wrapper sub">
                 <div className="contents__Types">

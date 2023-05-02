@@ -14,6 +14,8 @@ import imgLocation from 'img/location.png'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Nav from 'include/Nav';
+import SubHeader from 'include/SubHeader';
+import mbtiMain from 'img/mbti_main.png'
 
 function Detail() {
     const [swiper, setSwiper] = useState(null);
@@ -44,24 +46,7 @@ function Detail() {
 
     return (
         <div className="Trip">
-            <header className='subHeader'>
-                <div className="wrapper">
-                    <Link onClick={() => navigate(-1)} className='btn-back'>
-                        <img src={btnBack} alt="back"/>
-                    </Link>
-                    <div className='text'>
-                        <img src={logo} alt="logo"/>
-                        <h1>광주광역시 동구 여행 스타일별 추천여행</h1>
-                    </div>
-                </div>
-                <div className="ani-circles2">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </header>
+            <SubHeader title={'광주광역시 동구 여행 스타일별 추천여행'} />
 
             <div className="contents wrapper sub">
                 <div className="leftNav">

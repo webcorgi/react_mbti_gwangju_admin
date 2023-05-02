@@ -13,7 +13,6 @@
         width:35px;
     }
     .subHeader .text {
-        padding-left: 60px;
     }
     .nav_wrapper {
         display: flex;
@@ -153,7 +152,7 @@
         margin-bottom: 15px;
     }
     .wrapper__most .most__img {
-        height:100px;
+        height:200px;
     }
     .wrapper__most .most__text {
         padding:10px;
@@ -190,8 +189,7 @@
         font-size:20px;
     }
     .content__box2 {
-        margin:50px 0;
-        padding:0 20px;
+        margin:50px 0
     }
     .content__box2>* {
         width:100% !important;
@@ -202,34 +200,50 @@
     .btmBg {
         display: none;
     }
-    .header_test .ico_3d_modeling {
-        position: absolute;
-        right:10px;
-        top: 0;
-        height:50px;
+
+    .test:after,
+    .test:before {
+        background-size:50px;
+        height:50vh;
     }
-    .header_test {
-        padding:25px 0;
+    .test {
+        padding-bottom:40px;
     }
-    .survey__list {
-        margin:30px 0;
+    .test h1 {
+        font-size:17px;
     }
-    .survey__list .num {
-        min-width:25px;
-        height:25px;
-        font-size:15px;
-        top: 0;
-        margin-right: 5px;
+    .test h2 {
+        font-size:14px;
     }
-    .survey__list .qa .q {
-        margin-bottom: 10px;;
+    .test .qa .q {
+        font-size:30px;
+        padding-bottom:20px;
     }
-    .survey__list label {
-        align-items: flex-start;
+    .test .qa .a {
+        gap:10px;
+        display:block;
     }
-    .survey__list label .fakeRadio {
-        min-width:20px;
+    .test .qa .a label {
+        width:100%;
+        margin-bottom:10px;
+        min-height:auto;
     }
+    .test .qa .a label span {
+        font-size:17px;
+    }
+    .img_mbti_test {
+        width:200px;
+        position:relative;
+        top:-30px;
+    }
+    .test .processbar {
+        top:-80px;
+    }
+    .test .processbar .text {
+        font-size:20px;
+    }
+
+
     footer .logo__link {
         position: relative;
         margin-bottom: 20px;
@@ -466,7 +480,6 @@
     }
     .detailHashtag span {
         margin-bottom: 10px;
-        height:auto;
     }
 
 

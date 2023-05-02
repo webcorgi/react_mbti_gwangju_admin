@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import icoSearch from 'img/ico_search.png'
 import imgtype from 'img/sample1.png'
 import Nav from 'include/Nav';
+import SubHeader from 'include/SubHeader';
 
 
 const items = [
@@ -25,7 +26,7 @@ function Types() {
 
     const Items = () =>
         items.map(() =>
-            <Link className="item" to="/types/admin">
+            <Link className="item" to="/result">
                 <div className="img">
                     <img src={imgtype} alt="" />
                 </div>
@@ -36,24 +37,7 @@ function Types() {
 
     return (
         <div className="Types">
-            <header className='subHeader'>
-                <div className="wrapper">
-                    <Link onClick={() => navigate(-1)} className='btn-back'>
-                        <img src={btnBack} alt="back" />
-                    </Link>
-                    <div className='text'>
-                        <img src={logo} alt="logo" />
-                        <h1>모든 여행 스타일 유형 보기</h1>
-                    </div>
-                </div>
-                <div className="ani-circles2">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </header>
+            <SubHeader title={'모든 여행 스타일 유형 보기'} />
 
             <div className="contents wrapper sub">
                 <div className="contents__Types">

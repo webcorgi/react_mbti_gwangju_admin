@@ -8,6 +8,9 @@ import twitter from 'img/twitter.png'
 import insta from 'img/insta.png'
 import share from 'img/share.png'
 import Nav from 'include/Nav';
+import imgResultMBTI from 'img/mbti/ISTP.png'
+import ENFJ from 'img/mbti/ENFJ.png'
+import ISTJ from 'img/mbti/ISTJ.png'
 
 let currentPath = "";
 
@@ -23,8 +26,8 @@ function Result() {
                     <div className="content__result">
                         <div className="result__inner">
                             <h2 className='tit-top'>올해도 수박농사는 거뜬없지!</h2>
-                            <div className="imgbox">
-                                <img src={sample} alt=""/>
+                            <div className="imgmbtibox">
+                                <img src={imgResultMBTI} alt=""/>
                             </div>
                             <h3 className='tit-resulttype'>무등산 수박농부</h3>
                             <div className="hashtagbox">
@@ -101,17 +104,17 @@ function Result() {
 
                             <div className="course__items">
                                 <div className="item">
-                                    <p className='tit-place'>최고의 메이트</p>
+                                    <p className='tit-place c_best'>최고의 메이트</p>
                                     <Link to="/result" className="imgbox" onClick={() => window.scrollTo(0, 0)}>
-                                        <img src={sample} alt="course"/>
+                                        <img src={ENFJ} alt="course"/>
                                     </Link>
                                     <p className='tit-sub'>뭐든 할 수 있다구!</p>
                                     <h6>공룡알빵 제빵사</h6>
                                 </div>
                                 <div className="item">
-                                <p className='tit-place'>최악의 메이트</p>
+                                <p className='tit-place c_worst'>최악의 메이트</p>
                                     <Link to="/result" className="imgbox" onClick={() => window.scrollTo(0, 0)}>
-                                        <img src={sample} alt="course"/>
+                                        <img src={ISTJ} alt="course"/>
                                     </Link>
                                     <p className='tit-sub'>마음의 정화가 필요해</p>
                                     <h6>헌책방거리 점원</h6>

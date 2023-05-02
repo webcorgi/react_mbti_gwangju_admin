@@ -14,6 +14,9 @@ import imgKo from 'img/img_ko.png'
 import { Link } from "react-router-dom";
 import sample from 'img/sample1.png'
 import SelectFlag from "include/SelectFlag";
+import ENFJ from 'img/mbti/ENFJ.png'
+import ISTJ from 'img/mbti/ISTJ.png'
+import mbtiMain from 'img/mbti_main.png'
 
 function Home() {
     return (
@@ -41,7 +44,7 @@ function Home() {
                         </Link> */}
                     </div>
                     <div className="visual__image">
-                        <img src={sample} alt="" />
+                        <img src={mbtiMain} alt="" />
                     </div>
                 </div>
             </div>

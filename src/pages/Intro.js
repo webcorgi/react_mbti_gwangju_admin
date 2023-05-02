@@ -4,30 +4,14 @@ import btnBack from 'img/btn_back.png'
 import imgMbti from 'img/sample1.png'
 import { Link, useNavigate } from 'react-router-dom';
 import Nav from 'include/Nav';
+import SubHeader from 'include/SubHeader';
 
 function Intro() {
     const navigate = useNavigate();
     return (
         <div className="intro">
-            <header className='subHeader'>
-                <div className="wrapper">
-                <Link onClick={() => navigate(-1)} className='btn-back'>
-                        <img src={btnBack} alt="back" />
-                    </Link>
-                    <div className='text'>
-                        <img src={logo} alt="logo" />
-                        <h1>광주광역시 동구 여행 스타일 테스트란?</h1>
-                    </div>
-                </div>
-                <div className="ani-circles2">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </header>
-
+            <SubHeader title={'광주광역시 동구 여행 스타일 테스트란?'} />
+            
             <div className="contents wrapper sub">
                 <div className="contents__intro">
                     <div className="img">
