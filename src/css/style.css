@@ -45,7 +45,7 @@ body {
     width: 100%;
     position: relative;
     z-index: -1;
-    top: -100px;
+    top: 0;
 }
 .mid_bg img {
     width: 100%;
@@ -54,6 +54,7 @@ main {
     position: relative;
     z-index: 1;
     padding-bottom: 50px;
+    min-height:calc(100vh - 100px);
 }
 
 .visual .tit h3 {
@@ -91,7 +92,7 @@ main {
     background: #fff;
     box-shadow:var(--shadow);
     border-radius:20px;
-    height: 537px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -103,7 +104,7 @@ main {
 .visual__info {
     position: relative;
     border-right: 1px solid #eee;
-    padding: 110px 70px;
+    padding: 40px 70px;
     overflow: hidden;
 }
 .visual__image {
