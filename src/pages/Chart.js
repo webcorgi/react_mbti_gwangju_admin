@@ -11,52 +11,68 @@ import SubHeader from 'include/SubHeader';
 const charData = [
     {
         name: '무등산 수박농부',
-        mbti: 'ISTP'
+        mbti: 'ISTP',
+        color:'red',
     }, {
         name: '광주 역사학자',
-        mbti: 'INTP'
+        mbti: 'INTP',
+        color:'orange',
     }, {
         name: '광주 100만 유투버',
-        mbti: 'ESTP'
+        mbti: 'ESTP',
+        color:'blue',
     }, {
         name: 'ACC 무용가',
-        mbti: 'ENTP'
+        mbti: 'ENTP',
+        color:'skyblue',
     }, {
         name: '헌책방거리 서점원',
-        mbti: 'ISTJ'
+        mbti: 'ISTJ',
+        color:'green',
     }, {
         name: '너릿재 조경사',
-        mbti: 'INTJ'
+        mbti: 'INTJ',
+        color:'yellowgreen',
     }, {
         name: '동구 관광 매니저',
-        mbti: 'ESTJ'
+        mbti: 'ESTJ',
+        color:'violet',
     }, {
         name: '충장축제 기획자',
-        mbti: 'ENTJ'
+        mbti: 'ENTJ',
+        color:'purple',
     }, {
         name: '충장로 인디가수',
-        mbti: 'ISFP'
+        mbti: 'ISFP',
+        color:'pink',
     }, {
         name: '예술의 거리 화가',
-        mbti: 'INFP'
+        mbti: 'INFP',
+        color:'yellow',
     }, {
         name: '야시장 푸트파이터',
-        mbti: 'ESFP'
+        mbti: 'ESFP',
+        color:'aqua',
     }, {
         name: 'K-POP 스타의 거리 댄서',
-        mbti: 'ENFP'
+        mbti: 'ENFP',
+        color:'aqua',
     }, {
         name: '5.18 주먹밥 요리사',
-        mbti: 'ISFJ'
+        mbti: 'ISFJ',
+        color:'brown',
     }, {
         name: '춘설차 다도 선생님',
-        mbti: 'INFJ'
+        mbti: 'INFJ',
+        color:'crimson',
     }, {
         name: '동명동 바리스타',
-        mbti: 'ESFJ'
+        mbti: 'ESFJ',
+        color:'cadetblue',
     }, {
         name: '공룡알빵 제빵사',
-        mbti: 'ENFJ'
+        mbti: 'ENFJ',
+        color:'coral',
     }
 ]
 
@@ -67,7 +83,7 @@ function Chart() {
         charData.map((e,i) =>
             <div className="box" key={i}>
                 <div className="chart">
-                    <img src={imgChart} alt="" />
+                    <span className='dot' style={{backgroundColor:e.color}}></span>
                     <p className='percent'>38%</p>
                 </div>
                 <h3>{e.name}</h3>
@@ -104,6 +120,13 @@ function Chart() {
                         <h3>기간별 데이터</h3>
                         <div className="formtable">
                             <table>
+                                <colgroup>
+                                    <col style={{width:'28%'}} />
+                                    <col style={{width:'18%'}} />
+                                    <col style={{width:'18%'}} />
+                                    <col style={{width:'18%'}} />
+                                    <col style={{width:'18%'}} />
+                                </colgroup>
                                 <tr>
                                     <th></th>
                                     <th>누적</th>
@@ -145,7 +168,10 @@ function Chart() {
                         <h3>여행스타일별 데이터</h3>
 
                         <div className="typesChart">
-                            <TypesCharts />
+                            <img src={imgChart} alt="" style={{margin:'20px 0'}} />
+                            <div className="typesChartData">
+                                <TypesCharts />
+                            </div>
                         </div>
 
                         <div style={{height:50}}></div>

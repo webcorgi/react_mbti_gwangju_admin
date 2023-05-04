@@ -12,6 +12,74 @@ import imgResultMBTI from 'img/mbti/ISTP.png'
 import ENFJ from 'img/mbti/ENFJ.png'
 import ISTJ from 'img/mbti/ISTJ.png'
 
+const charData = [
+    {
+        name: '무등산 수박농부',
+        mbti: 'ISTP',
+        color:'red',
+    }, {
+        name: '광주 역사학자',
+        mbti: 'INTP',
+        color:'orange',
+    }, {
+        name: '광주 100만 유투버',
+        mbti: 'ESTP',
+        color:'blue',
+    }, {
+        name: 'ACC 무용가',
+        mbti: 'ENTP',
+        color:'skyblue',
+    }, {
+        name: '헌책방거리 서점원',
+        mbti: 'ISTJ',
+        color:'green',
+    }, {
+        name: '너릿재 조경사',
+        mbti: 'INTJ',
+        color:'yellowgreen',
+    }, {
+        name: '동구 관광 매니저',
+        mbti: 'ESTJ',
+        color:'violet',
+    }, {
+        name: '충장축제 기획자',
+        mbti: 'ENTJ',
+        color:'purple',
+    }, {
+        name: '충장로 인디가수',
+        mbti: 'ISFP',
+        color:'pink',
+    }, {
+        name: '예술의 거리 화가',
+        mbti: 'INFP',
+        color:'yellow',
+    }, {
+        name: '야시장 푸트파이터',
+        mbti: 'ESFP',
+        color:'aqua',
+    }, {
+        name: 'K-POP 스타의 거리 댄서',
+        mbti: 'ENFP',
+        color:'aqua',
+    }, {
+        name: '5.18 주먹밥 요리사',
+        mbti: 'ISFJ',
+        color:'brown',
+    }, {
+        name: '춘설차 다도 선생님',
+        mbti: 'INFJ',
+        color:'crimson',
+    }, {
+        name: '동명동 바리스타',
+        mbti: 'ESFJ',
+        color:'cadetblue',
+    }, {
+        name: '공룡알빵 제빵사',
+        mbti: 'ENFJ',
+        color:'coral',
+    }
+]
+
 let currentPath = "";
 
 function Result() {
@@ -25,46 +93,61 @@ function Result() {
                 <div className="contents">
                     <div className="content__result">
                         <div className="result__inner">
-                            <h2 className='tit-top'>올해도 수박농사는 거뜬없지!</h2>
+                            <h2 className='tit-top'>
+                                <input type="text" value="올해도 수박농사는 거뜬없지!" />
+                            </h2>
+
                             <div className="imgmbtibox">
                                 <img src={imgResultMBTI} alt=""/>
                             </div>
+                            <input type="file" />
                             <h3 className='tit-resulttype'>무등산 수박농부</h3>
                             <div className="hashtagbox">
-                                <span className="hashtag"># 만능 재주꾼</span>
-                                <span className="hashtag"># 창의적</span>
-                                <span className="hashtag"># 호기심천국</span>
+                                <input type="text" value="# 만능 재주꾼" />
+                                <input type="text" value="# 창의적" />
+                                <input type="text" value="# 호기심천국" />
+                                {/* <span className="hashtag"># </span>
+                                <span className="hashtag"># </span>
+                                <span className="hashtag"># </span> */}
                             </div>
                             <hr/>
                             <h3 className="tit-mark">
                                 당신의 유형은?
                             </h3>
                             <p className='type-detail'>
-                                현실적이지만 대담한 스타일!<br/>
-                                예기치 못한 상황도 무난히 타파하는 경력직 농부<br/><br/>
+                                <textarea name="" id=""
+                                    value="
+                                현실적이지만 대담한 스타일!
+                                예기치 못한 상황도 무난히 타파하는 경력직 농부
 
-                                노력파라 자신의 기술을 마음껏 활용하여<br/>
-                                목표 달성을 이룬다구~<br/><br/>
+                                노력파라 자신의 기술을 마음껏 활용하여
+                                목표 달성을 이룬다구~
 
                                 효율러라 활동적인 일을 선호하는 타입
+                                    "
+                                />
                             </p>
                             <div className="h80"></div>
                             <h3 className="tit-mark">
                                 당신의 여행타입은?
                             </h3>
                             <p className='type-detail'>
-                                반복되는 일상에 무료함을 느끼고 여행을 떠나는 타입!<br/>
-                                하지만 여행은 효율적이어야하는 효율러로<br/>
-                                여행지간 도선을 최소화 시킴!<br/><br/>
-
-                                항상 새로운 에너지로 가득<br/>
-                                철학, 사색, 아이디어에 목마른 걸 달래줄 수 있는<br/>
-                                여행지였으면 좋겠어~<br/><br/>
-
-                                예상치 못한 상황도 무난히 타파할 수 있으니<br/>
-                                어딜 내놓아도 걱정없는 타입<br/>
-                                액티비티한 여행지도 즐겁게 놀 수 있는<br/>
-                                발랄한 여행러
+                            <textarea name="" id=""
+                                    value="
+                                    반복되는 일상에 무료함을 느끼고 여행을 떠나는 타입!
+                                    하지만 여행은 효율적이어야하는 효율러로
+                                    여행지간 도선을 최소화 시킴!
+    
+                                    항상 새로운 에너지로 가득
+                                    철학, 사색, 아이디어에 목마른 걸 달래줄 수 있는
+                                    여행지였으면 좋겠어~
+    
+                                    예상치 못한 상황도 무난히 타파할 수 있으니
+                                    어딜 내놓아도 걱정없는 타입
+                                    액티비티한 여행지도 즐겁게 놀 수 있는
+                                    발랄한 여행러
+                                    "
+                                />
                             </p>
 
                             <hr/>
@@ -110,6 +193,13 @@ function Result() {
                                     </Link>
                                     <p className='tit-sub'>뭐든 할 수 있다구!</p>
                                     <h6>공룡알빵 제빵사</h6>
+                                    <select name="" id="">
+                                        {
+                                            charData.map((e,i) => 
+                                                <option key={i} value="">{e.name}/{e.mbti}</option>
+                                           )
+                                        }
+                                    </select>
                                 </div>
                                 <div className="item">
                                 <p className='tit-place c_worst'>최악의 메이트</p>
@@ -118,6 +208,13 @@ function Result() {
                                     </Link>
                                     <p className='tit-sub'>마음의 정화가 필요해</p>
                                     <h6>헌책방거리 점원</h6>
+                                    <select name="" id="">
+                                        {
+                                            charData.map((e,i) => 
+                                                <option key={i} value="">{e.name}/{e.mbti}</option>
+                                           )
+                                        }
+                                    </select>
                                 </div>
                             </div>
 
@@ -147,6 +244,7 @@ function Result() {
                         </div>
                     </div>
                     <Nav />
+
                 </div>
             </div>
             <div className="ani-circles">
@@ -157,6 +255,8 @@ function Result() {
                 <span className='ani_on_circle2'></span>
                 <span className='ani_on_circle3'></span>
             </div>
+
+            <button className='btn btn_modify_fixed'><span>수정 적용하기</span></button>
         </div>
     );
 }

@@ -20,6 +20,7 @@ import TypesAdmin from 'pages/TypesAdmin';
 import TripAdmin from 'pages/TripAdmin';
 import Chart from 'pages/Chart';
 import TestAdmin from 'pages/TestAdmin';
+import Loader from 'include/Loader';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
   return (
     //  basename={process.env.PUBLIC_URL}
     <BrowserRouter basename={'/react_mbti_gwangju_admin'}>
+      {/* <Loader /> */}
       <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} exact />

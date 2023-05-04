@@ -508,8 +508,11 @@
     .formtable table th, .formtable table td {
         padding:5px;
     }
+    .typesChart {
+        flex-wrap:wrap;
+    }
     .typesChart .box {
-        width:calc(50% - 20px);
+        width:calc(25% - 20px);
         padding: 10px;
     }
     .typesChart .box h4,

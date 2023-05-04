@@ -79,7 +79,7 @@ function Trip() {
                         <p>총 10건의 추천 여행지가 있습니다.</p>
                     </div>
 
-                    <Link to="/detail" className="item">
+                    <Link to="/trip/admin" className="item">
                         <div className="img">
                             <img src={imgPlace} alt="" />
                         </div>
@@ -91,7 +91,7 @@ function Trip() {
                             </p>
                         </div>
                     </Link>
-                    <Link to="/detail" className="item">
+                    <Link to="/trip/admin" className="item">
                         <div className="img">
                             <img src={imgPlace} alt="" />
                         </div>
@@ -103,7 +103,7 @@ function Trip() {
                             </p>
                         </div>
                     </Link>
-                    <Link to="/detail" className="item">
+                    <Link to="/trip/admin" className="item">
                         <div className="img">
                             <img src={imgPlace} alt="" />
                         </div>
@@ -115,7 +115,7 @@ function Trip() {
                             </p>
                         </div>
                     </Link>
-                    <Link to="/detail" className="item">
+                    <Link to="/trip/admin" className="item">
                         <div className="img">
                             <img src={imgPlace} alt="" />
                         </div>
@@ -127,7 +127,7 @@ function Trip() {
                             </p>
                         </div>
                     </Link>
-                    <Link to="/detail" className="item">
+                    <Link to="/trip/admin" className="item">
                         <div className="img">
                             <img src={imgPlace} alt="" />
                         </div>

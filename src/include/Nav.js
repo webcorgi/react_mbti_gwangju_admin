@@ -39,18 +39,14 @@ function Nav({isTripAdmin}) {
                         </div>
                     </Link>
                     <SelectFlag />
-                    {
-                        isTripAdmin==true &&
-                        <Link to="/trip/admin">
-                            <div>
-                                <img src={icoTravel} alt=""/>
-                                <span>여행지등록</span>
-                            </div>
-                        </Link>
-                    }
+                    <Link to="/trip/admin">
+                        <div>
+                            <img src={icoTravel} alt=""/>
+                            <span>여행지등록</span>
+                        </div>
+                    </Link>
                 </nav>
             }
-            
         </div>
     );
 }

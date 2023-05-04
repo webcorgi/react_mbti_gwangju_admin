@@ -6,27 +6,30 @@ import icoHome from 'img/ico_3d_home.png'
 import prevIcon from 'img/slidePrev.png'
 import nextIcon from 'img/slideNext.png'
 
-import SwiperCore, {Navigation} from 'swiper';
+import SwiperCore, {Navigation, Autoplay} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import sample from 'img/sample1.png'
 import imgLocation from 'img/location.png'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import "swiper/css/autoplay";
 import Nav from 'include/Nav';
 import SubHeader from 'include/SubHeader';
-import mbtiMain from 'img/mbti_main.png'
 
 function Detail() {
     const [swiper, setSwiper] = useState(null);
     const [mainImageIndex, setMainImageIndex] = useState(0);
 
-    SwiperCore.use([Navigation]);
+    SwiperCore.use([Navigation, Autoplay]);
 
     const navigationPrevRef = useRef(null);
     const navigationNextRef = useRef(null);
 
     const swiperParams = {
+        autoplay:{
+            delay:3000,
+        },
         navigation: {
             prevEl: navigationPrevRef.current,
             nextEl: navigationNextRef.current
@@ -61,7 +64,7 @@ function Detail() {
                 <div className="contents__trip">
                     <h2>여행 스타일별 추천여행 &#62; 관광명소 &#62; 광주 무등산</h2>
                     <div className="detailImages">
-                        <Swiper {...swiperParams} ref={setSwiper} className='swiper'>
+                        <Swiper {...swiperParams} ref={setSwiper} className='swiper' loop>
                             <SwiperSlide><img src={sample} alt="place" className='slideimg'/></SwiperSlide>
                             <SwiperSlide><img src={sample} alt="place" className='slideimg'/></SwiperSlide>
                             <SwiperSlide><img src={sample} alt="place" className='slideimg'/></SwiperSlide>
@@ -99,6 +102,9 @@ function Detail() {
                         '무등'이란 말은 불교용어로, 평등이 크게 이루어져서 평등이란 말조차 사라진 상태를 말한다. 다만, 처음부터 이렇게 이름지었다기보다는 광주의 옛 이름인 듯한 '무들'을 음차하면서 뜻 좋은 이름을 붙이기 위해 불교용어 무등을 차용했을 가능성이 있다.역사 기록에 의하면 백제 때 무진악(武珍岳), 고려 때 서석산(瑞石山)이라고 하였다. 이는 광주의 옛 이름 무진주에서 기인한 것으로, 무진주에 있는 산이라 하여 무진악 도는 무악이라 불렸고, 상서로운 돌(서석瑞石)이라 불릴 만큼 고대부터 무속신앙의 관계자들이 자주 찾던 명산으로 유명했다. 삼국통일 후 신라에서도 제사를 올리는 영험한 산이었다.#광주전남 사람들이라면 누구나 잘 아는 산이다. 실제 유명 관광지기도 한 무등산의 해발고도를 드러내기 위해 광주광역시는 원효사를 왕래하는 시내버스에 1187번을 지정해 운영한다. 
                     </p>
 
+                    <div className="detail__map" style={{border:'1px solid #ddd', height:300, marginTop:20}}>
+                        <img src="" alt="" style={{width:'100%', height:'100%', objectFit:'cover'}} />
+                    </div>
                     <a href="http://www.knps.or.kr/mudeung" target="_blank" className="btn mini detail">
                         <span>자세히 알아보기</span>
                     </a>
