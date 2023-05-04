@@ -7,7 +7,7 @@ import icoTravel from 'img/ico_3d_global.png'
 import SelectFlag from './SelectFlag';
 
 function Nav({isTripAdmin}) {
-    const [isShow, setIsShow] = useState(true);
+    const [isShow, setIsShow] = useState(false);
 
     const clickNav = () => {
         setIsShow(isShow==true?false:true)

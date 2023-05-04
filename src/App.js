@@ -25,7 +25,6 @@ import Loader from 'include/Loader';
 
 function App() {
 
-
   return (
     //  basename={process.env.PUBLIC_URL}
     <BrowserRouter basename={'/react_mbti_gwangju_admin'}>

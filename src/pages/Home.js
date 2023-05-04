@@ -34,7 +34,6 @@ function Home() {
                                 <span>테스트</span>
                             </h2>
                             <h3>
-                                <img src={ico3DModeling} alt="" className="ico_3d_modeling" />
                                 <span>ADMIN</span>
                             </h3>
                         </div>
