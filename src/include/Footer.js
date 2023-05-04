@@ -9,7 +9,7 @@ function Footer() {
                 <Link to="/" className='logo__link'>
                     <img src={logo} alt="광주광역시 동구" />
                 </Link>
-                <p>Copyright © 2023 All Rights Reserved.</p>
+                <p>Copyright (C) 2023 GWANGJU CITY DONG-GU. All rights Reserved.</p>
             </div>
         </footer>
     );

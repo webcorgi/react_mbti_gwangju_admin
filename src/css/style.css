@@ -53,6 +53,7 @@ body {
 main {
     position: relative;
     z-index: 1;
+    padding-bottom: 50px;
 }
 
 .visual .tit h3 {
@@ -497,7 +498,6 @@ main {
 .result {
     background: #FFFFF5;
     padding-top: 50px;
-    overflow-x:hidden;
 }
 .result .tit__big {
     font-size: 130px;
@@ -1116,9 +1116,9 @@ select {
 }
 .contents__trip .list__top .selects select {
     border:1px solid #999;
-    height:40px;
+    height:68px;
     width:170px;
-    line-height: 40px;
+    line-height: 68px;
     margin-right: 5px;
 }
 .contents__trip .list__top p {
@@ -1246,7 +1246,6 @@ select {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 20px;
 }
 .contents__trip .location img {
     height:30px;
@@ -1321,7 +1320,7 @@ select {
 }
 .formbox textarea {
     width:100%;
-    height:100px;
+    height:300px;
     resize:none;
     padding:10px;
     font-size:17px;
@@ -1563,12 +1562,4 @@ select {
     margin-left: 10px;
 }
 .btn_modify_fixed {
-    position: fixed;
-    bottom:20px;
-    left:25%;
-    z-index: 100000;
-    width:50%;
-}
-.btn_modify_fixed:hover {
-    opacity: 1;
 }

@@ -144,13 +144,12 @@ select {
     font-weight: 300;
 }
 footer {
-    position: relative;
+    position:   relative;
     text-align: center;
     border-top: 1px solid #ddd;
-    padding: 40px 0;
+    padding: 40px 10px;
     background: #fff;
     z-index: 1;
-    margin-top: 50px;
 }
 footer .logo__link {
     position: absolute;
@@ -232,4 +231,8 @@ footer p {
     background: #fff;
     padding:10px 20px;
     width:100%;
+}
+input[type=file]{
+    font-family: "roboto";
+    font-size:14px;
 }

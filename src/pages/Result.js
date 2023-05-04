@@ -218,7 +218,6 @@ function Result() {
                                 </div>
                             </div>
 
-                            <hr />
 
                             <div className="wrapper__share">
                                 <h6>내 결과 공유하기</h6>
@@ -239,13 +238,15 @@ function Result() {
                                         <img src={share} alt="share" />
                                     </button>
                                 </div>
-                                <Link to="/test" className='btn mini retry'><span>다시하기</span></Link>
+                                {<Link to="/test" className='btn mini retry'><span>다시하기</span></Link>}
                             </div>
                         </div>
+                        <button className='btn btn_modify_fixed'><span>수정 적용하기</span></button>
+
                     </div>
                     <Nav />
-
                 </div>
+
             </div>
             <div className="ani-circles">
                 <span className='ani_on_circle'></span>
@@ -256,7 +257,6 @@ function Result() {
                 <span className='ani_on_circle3'></span>
             </div>
 
-            <button className='btn btn_modify_fixed'><span>수정 적용하기</span></button>
         </div>
     );
 }
