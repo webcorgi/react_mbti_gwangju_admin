@@ -47,9 +47,9 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="mid_bg">
+            {/* <div className="mid_bg">
                 <img src={midBg} alt="mid_bg" />
-            </div>
+            </div> */}
 
             <div className="main__content wrapper">
                 <div className="content__box2">
